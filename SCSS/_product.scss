@@ -1,0 +1,20 @@
+$cake1: url('../imagen/cake.png');
+$cake2: url('../imagen/donut.png');
+$cake3: url('../imagen/ginger.png');
+$dulces: $cake1,
+$cake2,
+$cake3;
+
+@for $i from 1 through 3 {
+    .icon#{$i} {
+        background: nth($dulces, $i) no-repeat center;
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+.boton {
+    background-color: transparent;
+    border-color: transparent;
+}

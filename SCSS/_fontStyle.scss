@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+$font-family: (titulo: 'Dancing Script',
+    subtitulo: 'Libre Baskerville',
+    texto: 'Tahoma'
+);
+
+@each $key,
+$value in $font-family {
+    .#{$key}-base {
+        font-family: $value;
+
+        @if $key==titulo {
+            font-size: 30px;
+        }
+
+        @if $key==subtitulo {
+            font-size: 25px;
+        }
+
+        @if $key==texto {
+            font-size: 20px;
+        }
+    }
+}
+
+@mixin font-styles($size: false, $color: false, $weight: false) {
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+}
+
+.titulo {
+    @extend .titulo-base;
+    @include font-styles(false, red, 800);
+}
+
+.subtitulo {
+    @extend .subtitulo-base;
+    @include font-styles(false, green, 600);
+}
+
+.texto {
+    @extend .texto-base;
+    @include font-styles(false, blue, false);
+}
+
+.texto-card {
+    @extend .texto-base;
+    @include font-styles(17px, violet, false);
+}

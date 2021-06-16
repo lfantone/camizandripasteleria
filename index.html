@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS DE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--MI CSS-->
+    <!--<link rel="stylesheet" href="css/estilo.css">-->
+    <!--CSS DE SASS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cami Zandri Pasteleria</title>
+
+</head>
+
+<body class="container-fluid m-0 p-2">
+    <!--LOGO MAS NAVEGADOR-->
+    <header class="row header--sticky">
+        <div class="col-12 navegador">
+            <nav class="header__nav navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imagen/logo.png" alt="logo" width="100" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="header__nav__ul--justify navbar-nav">
+                        <li class="header__nav__ul__li--style nav-item active">
+                            <a class="header__nav__ul__li__a--link" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="header__nav__ul__li--style nav-item">
+                            <a class="header__nav__ul__li__a--link" href="./view/presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="header__nav__ul__li--style nav-item">
+                            <a class="header__nav__ul__li__a--link" href="view/conoceme.html">Conoceme</a>
+                        </li>
+                        <li class="header__nav__ul__li--style nav-item">
+                            <a class="header__nav__ul__li__a--link" href="view/productos.html">Mis Productos</a>
+                        </li>
+                        <li class="header__nav__ul__li--style nav-item">
+                            <a class="header__nav__ul__li__a--link" href="view/cursos.html">Cursos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <!--SECCION DE PRESENTACION DEL SITIO-->
+        <section class="row">
+            <div class="col-12">
+                <h1 class="titulo">"La risa es como el postre, para ella siempre hay hueco"</h1>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagen/prueba1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagen/prueba2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagen/prueba3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class=" boton carousel-control-prev" type="button"
+                            data-target="#carouselExampleControls" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="boton carousel-control-next " type="button"
+                            data-target="#carouselExampleControls" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <article>
+        <section>
+            <!--SECCION DE IDENTIDAD-->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="subtitulo">Quien soy?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                    <img src="imagen/conoceme01.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-12 col-md-4">
+                    <p class="texto text-justify m-0 p-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci numquam distinctio
+                        necessitatibus dignissimos, laboriosam, sequi cupiditate quia possimus voluptatem minima aliquam
+                        accusamus architecto quasi, aperiam ut ipsum excepturi nesciunt!
+                    </p>
+                </div>
+            </div>
+    </article>
+    <article>
+        <section>
+            <!--SECCION DE PRODUCTOS MAS VENDIDOS-->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="subtitulo">Delicias</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pb-2 col-md-3">
+                    <img src="imagen/Macarons.jpg" class="img-fluid float-left" alt="...">
+                </div>
+                <div class="col-12 pb-2 col-md-3 text-center">
+                    <img src="imagen/brownie.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-12 pb-2 col-md-3">
+                    <img src="imagen/alf03.jpg" class="img-fluid float-right" alt="...">
+                </div>
+                <div class="col-12 pb-2 col-md-3">
+                    <img src="imagen/Brownie02.jpg" class="img-fluid float-right" alt="...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form method="GET" action="view/productos.html">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info">Ver más Productos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!--FOOTER-->
+    <footer class="footer row  mt-5">
+        <div class="col-12">
+            <div class="footer__box">
+                <span class="material-icons-outlined">
+                    copyright
+                </span>
+                <span class="align-baseline">2021 Cami Zandri from Avila</span>
+                <div class="footer__line"></div>
+                <span class="align-baseline">Seguime...</span>
+                <a class="footer__box--social" href="https://www.instagram.com/camizandri.pasteleria/" target="_blank">
+                    <i class="bi bi-instagram"></i></a>
+                <a class="footer__box--social" href="https://www.youtube.com/channel/UCoGu1YIzhJwGc2mn35DY3DA"
+                    target="_blank"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--SCRIPT DE BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

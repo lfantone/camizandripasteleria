@@ -1,0 +1,45 @@
+$flex:flex;
+$letraNavegador:'Libre Baskerville',
+serif;
+
+.header--sticky {
+    background-color: transparent;
+    margin-bottom: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    .header__nav {
+        .header__nav__ul--justify {
+            display: $flex;
+            justify-content: space-evenly;
+
+            .header__nav__ul__li--style {
+                display: block;
+                list-style: none;
+                font-family: $letraNavegador;
+                font-size: 15px;
+                color: black;
+                margin-right: 15px;
+
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .header__nav__ul__li__a--link {
+                    color: black;
+                    padding: 5px;
+                    border-radius: 15px;
+
+
+                    &:hover {
+                        text-decoration: black;
+                        transition: opacity .5s;
+                        background: rgb(253, 211, 218);
+                    }
+                }
+            }
+        }
+    }
+}
